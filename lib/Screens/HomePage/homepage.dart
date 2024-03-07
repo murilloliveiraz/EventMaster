@@ -34,3 +34,9 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+//Column(
+  //children: [
+    //cardEvento('Yunk Vino - MAD Vol.2', 'https://i.scdn.co/image/ab6761610000e5eb019e4b48abbc831217ef48e0'),
+  //],
+//)
