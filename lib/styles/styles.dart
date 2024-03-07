@@ -2,13 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-TextStyle fonteTitulo(double tamanho){
-  return GoogleFonts.ultra(
-    fontSize: tamanho,
-    fontWeight: FontWeight.bold
-  );
-}
-
 TextStyle fonteTextoBold(double tamanho){
   return GoogleFonts.dmSans(
     fontSize: tamanho,
@@ -16,8 +9,40 @@ TextStyle fonteTextoBold(double tamanho){
   );
 }
 
+TextStyle fonteTitulo(double tamanho){
+  return GoogleFonts.ultra(
+    color: Colors.white,
+    fontSize: tamanho,
+    fontWeight: FontWeight.bold
+  );
+}
+
+TextStyle fonteTextoBoldWhite(double tamanho){
+  return GoogleFonts.dmSans(
+    color: Colors.white,
+    fontSize: tamanho,
+    fontWeight: FontWeight.bold
+  );
+}
+
 TextStyle fonteTextoRegular(double tamanho){
   return GoogleFonts.dmSans(
+    fontSize: tamanho,
+    fontWeight: FontWeight.normal
+  );
+}
+
+TextStyle fonteTextoRegularWhite(double tamanho){
+  return GoogleFonts.dmSans(
+    color: Colors.white,
+    fontSize: tamanho,
+    fontWeight: FontWeight.normal
+  );
+}
+
+TextStyle fonteTextoRegularAzul(double tamanho){
+  return GoogleFonts.dmSans(
+    color: colorTituloAzul(),
     fontSize: tamanho,
     fontWeight: FontWeight.normal
   );

@@ -14,14 +14,16 @@ BottomNavigationBar bottomNavigationBar(int itemSelecionado, nextStation){
         icon: Container(
           height: 40,
           width: 40, 
-          child: const Stack(
-            children: [
-              Positioned(
-                top: -10,
-                child: Icon(Icons.add_box),
-                zIndex: 1,
-              ),
-            ],
+          //color: colorBackground(),
+          decoration: BoxDecoration(
+            color: colorBackground(),
+            borderRadius: BorderRadius.circular(20), // Defina o raio da borda aqui
+          ),
+          child: Center(
+            child: Icon(
+              Icons.add_box,
+              color: Color(0xFFadb5bd),
+            ),
           ),
         ),
         label: '',

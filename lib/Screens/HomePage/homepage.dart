@@ -1,3 +1,4 @@
+import 'package:eventmaster/Screens/Explore/explore.dart';
 import 'package:eventmaster/customWidgets/bottomNavigationBar.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   List<Widget> telas = const [
-    Text('Explore'),
+    Explore(),
     Text('Eventos'),
     Text('Inicio'),
     Text('Mapa'),
