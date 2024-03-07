@@ -1,3 +1,4 @@
+import 'package:eventmaster/Screens/Intro/intropage.dart';
 import 'package:eventmaster/Screens/Explore/explore.dart';
 import 'package:eventmaster/customWidgets/bottomNavigationBar.dart';
 import 'package:flutter/material.dart';
@@ -29,8 +30,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: telas.elementAt(itemSelecionado),
-      bottomNavigationBar: bottomNavigationBar(itemSelecionado, nextStation),
+      body: IntroPage(),
     );
   }
 }
