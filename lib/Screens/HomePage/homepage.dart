@@ -11,22 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int itemSelecionado = 0;
-
-  void nextStation(int posicao){
-    setState(() {
-      itemSelecionado = posicao;
-    });
-  }
-
-  List<Widget> telas = const [
-    Explore(),
-    Text('Eventos'),
-    Text('Inicio'),
-    Text('Mapa'),
-    Text('Perfil'),
-  ];
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

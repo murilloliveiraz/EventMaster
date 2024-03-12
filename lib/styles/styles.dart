@@ -9,6 +9,14 @@ TextStyle fonteTextoBold(double tamanho){
   );
 }
 
+TextStyle fonteTextoBoldAzul(double tamanho){
+  return GoogleFonts.dmSans(
+    fontSize: tamanho,
+    fontWeight: FontWeight.bold,
+    color: const Color(0xFF468FAF)
+  );
+}
+
 TextStyle fonteTitulo(double tamanho){
   return GoogleFonts.ultra(
     color: Colors.white,
