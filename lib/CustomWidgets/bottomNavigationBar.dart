@@ -9,7 +9,6 @@ BottomNavigationBar bottomNavigationBar(int itemSelecionado, nextStation){
     unselectedItemColor: colorCinza(),
     items: [
       bottomNavigationBarItem(Icons.explore, 'Explore', itemSelecionado == 0),
-      bottomNavigationBarItem(Icons.calendar_month, 'Eventos', itemSelecionado == 1),
       BottomNavigationBarItem(
         icon: Container(
           height: 40,
@@ -28,8 +27,7 @@ BottomNavigationBar bottomNavigationBar(int itemSelecionado, nextStation){
         ),
         label: '',
       ),
-      bottomNavigationBarItem(Icons.location_on, 'Mapa', itemSelecionado == 3),
-      bottomNavigationBarItem(Icons.account_circle, 'Perfil', itemSelecionado == 4),
+      bottomNavigationBarItem(Icons.account_circle, 'Perfil', itemSelecionado == 2),
     ],
   );
 }
