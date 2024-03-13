@@ -1,3 +1,4 @@
+import 'package:eventmaster/CustomWidgets/cardLogin.dart';
 import 'package:eventmaster/Screens/Explore/explore.dart';
 import 'package:eventmaster/styles/styles.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +69,7 @@ class IntroPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return const Explore();
+                      return const LoginPage();
                     },
                   ),
                 ),
