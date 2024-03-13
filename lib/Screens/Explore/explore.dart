@@ -19,8 +19,6 @@ class _ExploreState extends State<Explore> {
   List<Widget> telas = const [
     ExploreScreen(),
     Text('Inicio'),
-    Text('Mapa'),
-    Text('Perfil'),
     ProfileScreen(),
   ];
 
@@ -127,9 +125,11 @@ class ExploreScreen extends StatelessWidget {
                               shrinkWrap: true,
                               scrollDirection: Axis.horizontal,
                               children: [
+                                    cardEvento('Travis Scott - UTOPIA', 'https://www.vagalume.com.br/dynimage/news49347-big.jpg'),
                                     cardEvento('Yunk Vino - MAD Vol.2', 'https://i.scdn.co/image/ab6761610000e5eb019e4b48abbc831217ef48e0'),
                                     const SizedBox(width: 15),
-                                    cardEvento('Yunk Vino - MAD Vol.2', 'https://i.scdn.co/image/ab6761610000e5eb019e4b48abbc831217ef48e0'),
+                                    cardEvento('Kyan - Dias Antes de Mandrake', 'https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e3/79/c1/e379c191-7a20-d93b-20e6-94718454ad7b/8445162930352.jpg/1200x1200bb.jpg'),
+                                    const SizedBox(width: 15),
                               ],
                             ),
                           ),
@@ -143,6 +143,8 @@ class ExploreScreen extends StatelessWidget {
                                 eventTopic('Festivais de música'),
                                 eventTopic('Festivais de arte'),
                                 eventTopic('Espetáculos'),
+                                eventTopic('CENA 2k24'),
+                                eventTopic('RepFestival'),
                               ],
                             ),
                           )
